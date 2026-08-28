@@ -1,0 +1,51 @@
+/**
+ * Design tokens del sitio.
+ * Todos los componentes usan estas variables: cambiando acá
+ * los colores, fuentes o espaciados, cambia todo el portfolio.
+ */
+
+:root {
+  /* --- Colores --- */
+  --color-bg: #0c0c0e;
+  --color-bg-alt: #131316;
+  --color-surface: #1a1a1f;
+  --color-border: rgba(255, 255, 255, 0.1);
+  --color-text: #f2f0ed;
+  --color-text-muted: #a3a09b;
+  --color-accent: #c9a227;
+  --color-accent-soft: rgba(201, 162, 39, 0.14);
+
+  /* --- Tipografía --- */
+  --font-display: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+  --font-body: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.375rem;
+  --text-2xl: clamp(1.75rem, 3vw, 2.5rem);
+  --text-3xl: clamp(2.25rem, 5vw, 3.5rem);
+  --text-hero: clamp(2.75rem, 9vw, 6.5rem);
+
+  /* --- Espaciados --- */
+  --space-xs: 0.5rem;
+  --space-sm: 0.75rem;
+  --space-md: 1.25rem;
+  --space-lg: 2rem;
+  --space-xl: 3.5rem;
+  --space-2xl: 6rem;
+
+  /* --- Layout --- */
+  --container-width: 1200px;
+  --container-padding: clamp(1.25rem, 5vw, 3rem);
+  --radius-sm: 4px;
+  --radius-md: 10px;
+  --radius-lg: 20px;
+  --radius-full: 999px;
+
+  /* --- Otros --- */
+  --header-height: 76px;
+  --transition: 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+  --shadow-lg: 0 24px 60px rgba(0, 0, 0, 0.45);
+}
