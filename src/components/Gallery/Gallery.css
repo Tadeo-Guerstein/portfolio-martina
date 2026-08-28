@@ -1,0 +1,147 @@
+/* ------------------------- Filtros ------------------------- */
+.gallery__filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+  margin-top: var(--space-lg);
+}
+
+.gallery__filter {
+  padding: 0.5rem 1.1rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-full);
+  color: var(--color-text-muted);
+  font-size: var(--text-xs);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  transition: var(--transition);
+  transition-property: background-color, color, border-color;
+}
+
+.gallery__filter:hover {
+  color: var(--color-text);
+  border-color: var(--color-accent);
+}
+
+.gallery__filter.is-active {
+  background-color: var(--color-accent);
+  border-color: var(--color-accent);
+  color: #0c0c0e;
+}
+
+/* ------------------------ Carousel ------------------------ */
+.gallery__carousel {
+  position: relative;
+  margin-top: var(--space-xl);
+}
+
+.gallery__slide {
+  display: block;
+  position: relative;
+  width: 100%;
+  padding: 0;
+  overflow: hidden;
+  border-radius: var(--radius-md);
+  background-color: var(--color-surface);
+}
+
+.gallery__slide img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  transition: transform 0.8s cubic-bezier(0.22, 1, 0.36, 1), filter var(--transition);
+  filter: grayscale(30%) brightness(0.9);
+}
+
+.gallery__slide:hover img {
+  transform: scale(1.04);
+  filter: grayscale(0%) brightness(1);
+}
+
+/* Ícono de "ampliar" que aparece al pasar el mouse */
+.gallery__zoom {
+  position: absolute;
+  top: var(--space-md);
+  right: var(--space-md);
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-full);
+  background-color: rgba(12, 12, 14, 0.7);
+  opacity: 0;
+  transform: translateY(-6px);
+  transition: opacity var(--transition), transform var(--transition);
+}
+
+.gallery__slide:hover .gallery__zoom {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Título y datos de la foto, sobre un degradado inferior */
+.gallery__meta {
+  position: absolute;
+  inset: auto 0 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  padding: var(--space-lg) var(--space-md) var(--space-md);
+  text-align: left;
+  background: linear-gradient(to top, rgba(8, 8, 10, 0.9), transparent);
+}
+
+.gallery__meta strong {
+  font-family: var(--font-display);
+  font-size: var(--text-lg);
+  font-weight: 400;
+}
+
+.gallery__meta em {
+  color: var(--color-text-muted);
+  font-size: var(--text-xs);
+  font-style: normal;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+/* --------------------- Flechas y paginación --------------------- */
+.gallery__arrows {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-sm);
+  margin-top: var(--space-lg);
+}
+
+.gallery__arrow {
+  display: grid;
+  place-items: center;
+  width: 46px;
+  height: 46px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-full);
+  transition: var(--transition);
+  transition-property: background-color, color, border-color;
+}
+
+.gallery__arrow:hover {
+  background-color: var(--color-accent);
+  border-color: var(--color-accent);
+  color: #0c0c0e;
+}
+
+/* Sobrescribe los estilos por defecto de Swiper */
+.gallery__carousel .swiper {
+  padding-inline: var(--container-padding);
+  padding-bottom: var(--space-lg);
+}
+
+.gallery__carousel .swiper-pagination-bullet {
+  background-color: var(--color-text-muted);
+  opacity: 0.5;
+}
+
+.gallery__carousel .swiper-pagination-bullet-active {
+  background-color: var(--color-accent);
+  opacity: 1;
+}
