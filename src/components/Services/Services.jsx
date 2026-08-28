@@ -11,8 +11,9 @@ export default function Services() {
           <span className="section-kicker">Servicios</span>
           <h2 className="section-title">Cómo podemos trabajar</h2>
           <p className="section-lead">
-            Todos los presupuestos incluyen la edición completa, la entrega en galería
-            online y una reunión previa para definir el tono de las fotos.
+            Todas las sesiones incluyen la edición completa, la entrega en galería
+            online y una reunión previa para definir el tono de las fotos. Escribime
+            contando lo que necesitás y armamos algo a tu medida.
           </p>
         </Reveal>
 
@@ -27,7 +28,6 @@ export default function Services() {
                   </span>
                   <h3 className="services__title">{service.title}</h3>
                   <p className="services__description">{service.description}</p>
-                  <span className="services__price">{service.price}</span>
                 </article>
               </Reveal>
             )

@@ -49,7 +49,7 @@ src/
     ├── Gallery/             Carousel con filtros
     │   ├── Gallery.jsx
     │   └── Lightbox.jsx     Visor de foto a pantalla completa (teclado + flechas)
-    ├── Services/            Grilla de servicios y precios
+    ├── Services/            Grilla de servicios
     ├── Testimonials/        Carousel automático de testimonios
     ├── Contact/             Datos, redes y formulario
     └── Footer/              Pie con navegación y redes

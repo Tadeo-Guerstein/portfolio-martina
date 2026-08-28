@@ -25,14 +25,14 @@ import { FaWhatsapp, FaBehance, FaPinterestP } from 'react-icons/fa'
 /* ---------------------------- Perfil ---------------------------- */
 
 export const profile = {
-  name: 'Valentina Ríos',
+  name: 'Martina Sanchez',
   role: 'Fotógrafa documental y de retrato',
-  location: 'Buenos Aires, Argentina',
+  location: 'Mar del Plata, Argentina',
   tagline: 'Fotografío la luz que se escapa',
   heroSubtitle:
     'Retratos, bodas y ensayos documentales. Busco esos gestos mínimos que cuentan una historia entera.',
-  heroImage: 'https://picsum.photos/seed/valentina-hero/1600/2000',
-  portraitImage: 'https://picsum.photos/seed/valentina-retrato/900/1100',
+  heroImage: 'https://picsum.photos/seed/martina-hero/1600/2000',
+  portraitImage: 'https://picsum.photos/seed/martina-retrato/900/1100',
 }
 
 /* --------------------------- Sobre mí --------------------------- */
@@ -75,7 +75,7 @@ export const gallery = [
   {
     id: 3,
     src: 'https://picsum.photos/seed/documental-01/1400/1000',
-    title: 'Feria de Mataderos',
+    title: 'Feria del puerto',
     category: 'Documental',
     year: '2024',
   },
@@ -124,28 +124,24 @@ export const services = [
     title: 'Retrato personal',
     description:
       'Sesión de dos horas en exterior o en tu casa. Nos tomamos el tiempo necesario hasta que la cámara deje de incomodar.',
-    price: 'Desde $180.000',
   },
   {
     icon: FiHeart,
     title: 'Bodas y civiles',
     description:
       'Cobertura documental de la jornada completa, sin poses armadas. Incluye una selección editada de 300 fotos.',
-    price: 'Desde $650.000',
   },
   {
     icon: FiUsers,
     title: 'Familia y embarazo',
     description:
       'Un rato juntos, en el lugar donde se sientan cómodos. Ideal con luz de tarde y muy poca producción.',
-    price: 'Desde $220.000',
   },
   {
     icon: FiSun,
     title: 'Ensayo documental',
     description:
-      'Proyectos de autor por encargo para revistas, ONGs y marcas. Se cotiza según duración y alcance.',
-    price: 'A convenir',
+      'Proyectos de autor por encargo para revistas, ONGs y marcas. El alcance se define según la duración y el uso de las imágenes.',
   },
 ]
 
@@ -160,9 +156,9 @@ export const testimonials = [
   },
   {
     quote:
-      'Buscábamos alguien que no nos hiciera actuar nuestra propia boda. Valentina hizo exactamente eso.',
+      'Buscábamos alguien que no nos hiciera actuar nuestra propia boda. Martina hizo exactamente eso.',
     author: 'Julia y Martín',
-    context: 'Boda en San Isidro',
+    context: 'Boda en Chapadmalal',
   },
   {
     quote:
@@ -178,9 +174,9 @@ export const contact = {
   title: 'Trabajemos juntos',
   intro:
     'Contame qué tenés en mente: fecha, lugar y qué te gustaría recordar de ese día. Respondo todos los mensajes en menos de 48 horas.',
-  email: 'hola@valentinarios.com',
+  email: 'hola@martinasanchez.com',
   phone: '+54 9 11 5555 1234',
-  city: 'Buenos Aires · Disponible para viajar',
+  city: 'Mar del Plata · Disponible para viajar',
 }
 
 /**
@@ -190,7 +186,7 @@ export const contact = {
 export const socials = [
   {
     label: 'Instagram',
-    handle: '@valentina.rios',
+    handle: '@martina.sanchez',
     href: 'https://instagram.com/',
     icon: FiInstagram,
   },
@@ -202,19 +198,19 @@ export const socials = [
   },
   {
     label: 'Email',
-    handle: 'hola@valentinarios.com',
-    href: 'mailto:hola@valentinarios.com',
+    handle: 'hola@martinasanchez.com',
+    href: 'mailto:hola@martinasanchez.com',
     icon: FiMail,
   },
   {
     label: 'Behance',
-    handle: '/valentinarios',
+    handle: '/martinasanchez',
     href: 'https://behance.net/',
     icon: FaBehance,
   },
   {
     label: 'Pinterest',
-    handle: '/valentinarios',
+    handle: '/martinasanchez',
     href: 'https://pinterest.com/',
     icon: FaPinterestP,
   },

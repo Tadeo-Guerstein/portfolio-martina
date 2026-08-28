@@ -44,15 +44,6 @@
   font-size: var(--text-sm);
 }
 
-.services__price {
-  padding-top: var(--space-sm);
-  border-top: 1px solid var(--color-border);
-  color: var(--color-accent);
-  font-size: var(--text-xs);
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-}
-
 /* Reveal agrega un <div> intermedio: lo estiramos para igualar alturas */
 .services__grid > * {
   height: 100%;
