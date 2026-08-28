@@ -186,8 +186,8 @@ export const contact = {
 export const socials = [
   {
     label: 'Instagram',
-    handle: '@martina.sanchez',
-    href: 'https://instagram.com/',
+    handle: '@ph.signemartina',
+    href: 'https://www.instagram.com/ph.signemartina',
     icon: FiInstagram,
   },
   {
